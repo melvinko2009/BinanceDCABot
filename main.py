@@ -140,8 +140,8 @@ if __name__ == "__main__":
     steps = dict()
 
     # Connect to Binance API
-    api_key = os.environ.get('binance_api')
-    api_secret = os.environ.get('binance_secret')
+    api_key = 'xxx'  # yourApiKey
+    api_secret = 'xxx'  # yourApiSecret
 
     binanceClient = BinanceClient(api_key, api_secret)
     BASE_URL = 'https://api.binance.com'

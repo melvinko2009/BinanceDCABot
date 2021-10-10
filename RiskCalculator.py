@@ -6,8 +6,6 @@ from matplotlib.collections import LineCollection
 import matplotlib.dates as mdates
 from datetime import datetime
 import numpy as np
-import requests
-import arrow
 
 plt.style.use('dark_background')
 
@@ -17,18 +15,6 @@ plt.style.use('dark_background')
 def getRiskForAsset(asset: str, draw=False) -> float:
     cg, df = CoinGeckoAPI(), pd.DataFrame()
     data = dict()
-
-    # Get historic Data (CoinAPI)
-    SMailApi_key = "57AFD1FA-8E94-4A70-941F-9D2DFB6F0533"
-    GMailApi_key = "2CBC2FEF-6319-4982-9990-AC644FDE392D"
-    url = 'https://rest.coinapi.io/v1/exchangerate/BTC/EUR/history?period_id=1DAY&time_start=2010-07-01T00:00:00' \
-          f'&time_end=2014-01-01T00:00:00&limit=10000'
-    headers = {'X-CoinAPI-Key': SMailApi_key}
-    # coinApiData = requests.get(url, headers=headers).json()
-
-    # If API is bad or limit is reached
-    # for values in coinApiData:
-    #   data[datetime.strptime(str(arrow.get(values['time_period_end']).datetime)[:-6], '%Y-%m-%d %H:%M:%S')] = values['rate_close']
 
     # Get  Market Data for asset (Coingecko)
     coingeckoData = cg.get_coin_market_chart_by_id(id=asset.lower(), vs_currency='eur', days='max')
