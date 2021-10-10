@@ -1,5 +1,7 @@
 "BinanceDCABot"
 
+Overview
+
 This idea of the project was to allow a customizable recurring buy regarding the assets, price and a current calculated risk for the Binance plattform. 
 
 In Main.py the Binance ApiKey,  Binance Secret and the wished for orders are defineed. After placing the orders a Excel file for all wanted trading pairs is created and orders that fit certain criterias (time, sell/buy, fulfilled, etc.) are written into the coresponding Excel sheet.
