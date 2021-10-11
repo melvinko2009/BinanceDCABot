@@ -11,7 +11,7 @@ I personally set the key and secret as enviroment variables. Besides the money t
 
 This idea of the project was to allow a customizable recurring buy regarding the asset, price and a current calculated risk for the Binance platform. 
 
-In Main.py the Binance API Key,  Secret, the wished for orders and other attributes are defined. After placing the orders a Excel file for all wanted trading pairs is created and orders that fit certain criterias (time, sell/buy, fulfilled, etc.) are written into the corresponding Excel sheet. Separetlely to the Binance-Python API get Requests are implemented to redeem the asset for paying from the flexible savings account. Therefore, the need manual interference or preparation should be none (besides having enough money to place the orders).
+In Main.py the Binance API Key,  Secret, the wished for orders and other attributes are defined. After placing the orders a Excel file for all wanted trading pairs is created and orders that fit certain criterias (time, sell/buy, fulfilled, etc.) are written into the corresponding Excel sheet. Separately to the Binance-Python API get Requests are implemented to redeem the asset for paying from the flexible savings account. Therefore, the need manual interference or preparation should be none (besides having enough money to place the orders).
 ExcelWriter.py opens an existing file (Orders.xlsx) and creates one sheet per asset and creates for each defined trading pair for the asset on dataframe.
 RiskCalculator.py calculates a normalized risk for the current bitcoin price and adjusts the order amount to the risk. Therefore, a higher current risk results in a lower order amount.
 
