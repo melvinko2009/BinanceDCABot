@@ -4,7 +4,8 @@ The nonexistence of methods and projects that allow recurring buy on Binance pri
 
 ## Getting Started
 
-First, you will need a Binance account. Next, you will need to create a Binance API Key and Secret in order to access the Binance API. There are many tutorials on how to create the Binance API Key and Secret I personally set the key and secret as enviroment variables. And besides money to place the orders everything you should have everything you need.
+First, you will need a Binance account. Next, you will need to create a Binance API Key and Secret in order to access the Binance API. There are many tutorials on how to create the Binance API Key and Secret.
+I personally set the key and secret as enviroment variables. Besides the money to place the orders  you should have everything you need.
 
 ## Overview
 
